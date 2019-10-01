@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<style>
+
+		body{
+
+			background-color: powderblue;
+		}
+		
+		.div1{
+
+			text-align: center;
+			padding-top: 100px;
+		}
+
+		#h11{
+
+			color: tomato;
+		}
+
+
+	</style>
+</head>
+<body>
+	<div class="div1">
+		<h1 id="h11">Word Count</h1>
+
+		<form action="{% url 'count' %}">
+			<textarea cols="40" rows="10" name="fulltext"></textarea>
+			<br>
+			<input type="submit" name="count..." value="Count it!">
+		</form>
+		<form action="{% url 'about' %}">
+			<input type="submit" name="about..." value="About Us">
+		</form>
+	</div>
+</body>
+</html>

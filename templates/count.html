@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+
+	<h1>There are {{ count }} words in the text</h1>
+	<h2>Your text:</h2>
+	{{ fulltext }}
+	<hr>
+
+	{% for word, num in dic %}
+		<em>{{ word }}: </em>
+		{{ num }}
+		<br>
+	{% endfor %}
+
+</body>
+</html>
